@@ -2,6 +2,11 @@
   "expo": {
     "name": "Navigation",
     "slug": "Navigation",
-    "version": "1.0.0"
+    "version": "1.0.0",
+    "extra": {
+      "eas": {
+        "projectId": "ba949ad1-67e6-482a-9606-3ea7ca74c987"
+      }
+    }
   }
 }
