@@ -1,5 +1,5 @@
 import { View } from "react-native";
-import { useNavigation } from "@react-navigation/native";
+import { useNavigation, useRoute } from "@react-navigation/native";
 
 import { Header } from "@/components/Header";
 import { Title } from "@/components/Title";
@@ -7,6 +7,7 @@ import { ButtonIcon } from "@/components/ButtonIcon";
 
 export function Product () {
     const navigation = useNavigation();
+    const route = useRoute();
 
     return (
         <View
@@ -18,7 +19,7 @@ export function Product () {
         >
             <Header>
                 <ButtonIcon name="arrow-circle-left" onPress={() => navigation.goBack()} />
-                <Title>Product</Title>
+                <Title>Product id vindo do Home = { route.params?.id }</Title>
             </Header>
         </View>
     )

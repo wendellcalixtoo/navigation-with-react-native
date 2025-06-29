@@ -18,7 +18,7 @@ export function Home () {
         >
             <Header>
                 <Title>Home</Title>
-                <ButtonIcon name="add-circle" onPress={() => navigation.navigate("product")} />
+                <ButtonIcon name="add-circle" onPress={() => navigation.navigate("product", { id: "666" })} />
             </Header>
         </View>
     )
